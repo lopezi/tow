@@ -1,0 +1,14 @@
+{
+  "name": "@lopezi/force-directed-tree",
+  "main": "42d22a7b489744d6@174.js",
+  "version": "174.0.0",
+  "homepage": "https://observablehq.com/@lopezi/force-directed-tree",
+  "author": {
+    "name": "Nuno Lopes",
+    "url": "https://observablehq.com/@lopezi"
+  },
+  "type": "module",
+  "peerDependencies": {
+    "@observablehq/runtime": "4"
+  }
+}
