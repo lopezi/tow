@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <mu-appbar style="width: 100%;" color="primary">
-      <p slot="left">hello</p>
+      <img width="100" slot="left" src="../assets/tow-logo.svg" />
     </mu-appbar>
   </div>
 </template>
