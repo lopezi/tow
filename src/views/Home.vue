@@ -3,10 +3,10 @@
     <mu-container class="demo-container">
       <mu-row gutter>
         <mu-appbar style="width: 100%;" color="white">
-          <img width="82" slot="left" src="../assets/tow-logo.svg" />
+          <img width="77" slot="left" src="../assets/tow-logo.svg" />
         </mu-appbar>
       </mu-row>
-      <mu-paper style="margin-left: -8px; margin-right:-8px;" :z-depth="5">
+      <mu-paper style="margin:20px -8px 0 -8px;" :z-depth="5">
         <mu-row >
           <mu-col span="12" sm="12" md="6">
               <div class="grid-cell">
@@ -35,6 +35,68 @@
         </mu-row>
       </mu-paper>
 
+      <mu-row>
+        <mu-col span="12" sm="12" md="6">
+          <div class="grid-cell">
+            <mu-flex class="flex-demo" justify-content="center" fill>
+              <mu-container class="email">
+                <h1>Get paid for data on Tree of Wally</h1>
+                <p>You share data with internet platforms without getting its value in return. Tree of Wally - or ToW - makes getting the value in your data easy. </p>
+              </mu-container>
+            </mu-flex>
+          </div>
+        </mu-col>
+        <mu-col span="12" sm="12" md="6">
+          <div class="grid-cell">
+            <mu-flex style="padding: 5vw;height:444px;background-color: dodgerblue;" class="flex-demo" justify-content="center" fill>
+              <!--<img style="width: 100%;" alt="ToW rings" src="../assets/rings.svg" />-->
+            </mu-flex>
+          </div>
+        </mu-col>
+      </mu-row>
+      <mu-row>
+        <mu-col span="12" sm="12" md="6">
+          <div class="grid-cell">
+            <mu-flex style="padding: 5vw;height:444px;background-color: dodgerblue;" class="flex-demo" justify-content="center" fill>
+
+            </mu-flex>
+          </div>
+        </mu-col>
+        <mu-col span="12" sm="12" md="6">
+          <div class="grid-cell">
+            <mu-flex class="flex-demo" justify-content="center" fill>
+              <mu-container class="email">
+                <h1>How ToW works</h1>
+                <p>ToW gives you “data credits” — Wallys — everyday for access to your data. ToW enforces your data rights against violators using CCPA and GDPR privacy laws. Wallys are a medium of exchange to track content views in ToW’s ecosystem, beginning with a native social network. Wallys are good currency, widely distributed with stable market-priced exchange-rates.
+                </p>
+              </mu-container>
+            </mu-flex>
+          </div>
+        </mu-col>
+      </mu-row>
+      <mu-row>
+        <mu-col span="12" sm="12" md="6">
+          <div class="grid-cell">
+            <mu-flex class="flex-demo" justify-content="center" fill>
+              <mu-container class="email">
+                <h1>Financial leverage in your pocket.</h1>
+                <p>Payments to buy ads in the ToW ecosystem are settled in Wallys. Therefore, as businesses allocate budget for ads on ToW, they pay dollars to buy Wallys from consumers on the app. </p>
+              </mu-container>
+            </mu-flex>
+          </div>
+        </mu-col>
+        <mu-col span="12" sm="12" md="6">
+          <div class="grid-cell">
+            <mu-flex style="height:444px;background-color: dodgerblue;" class="flex-demo" justify-content="center" fill>
+              <mu-container class="email">
+
+              </mu-container>
+            </mu-flex>
+          </div>
+        </mu-col>
+      </mu-row>
+      <Footer></Footer>
+
     </mu-container>
 
   </div>
@@ -43,10 +105,12 @@
 <script>
 // @ is an alias to /src
 
+import Footer       from '../components/Footer';
+
 export default {
   name: 'Home',
   components: {
-
+    'Footer': Footer,
   },
   data () {
     return {
@@ -65,6 +129,9 @@ export default {
         console.log('form valid: ', result)
       });
     },
+    scrollToTop() {
+      window.scrollTo(0,0);
+    }
   }
 };
 </script>
@@ -84,10 +151,11 @@ export default {
   }
   @media only screen and (min-width: 768px) {
     .email {
-      margin-top: 80px;
+      margin-top: 60px;
     }
   }
   .email {
+    padding: 0 4vw 0 4vw;
     .mu-form-item-label {
       text-align: left;
     }
